@@ -1,0 +1,38 @@
+{
+  "name": "cortex-plugin-flaky-tests",
+  "version": "1.0.0",
+  "description": "Flaky Test Hunter — Analyze test history to identify, categorize, and quarantine flaky tests",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-flaky-tests",
+  "homepage": "https://cortexprism.io/marketplace/plugins/flaky-tests",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "flaky_analyze",
+      "description": "Analyze test runs for flaky patterns",
+      "params": []
+    },
+    {
+      "name": "flaky_categorize",
+      "description": "Categorize flaky test by failure pattern",
+      "params": []
+    },
+    {
+      "name": "flaky_quarantine",
+      "description": "Quarantine tests exceeding flakiness threshold",
+      "params": []
+    },
+    {
+      "name": "flaky_suggest_fix",
+      "description": "Suggest fixes for identified flaky tests",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
